@@ -287,7 +287,8 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/kids-background.jpg');
+    /*background-image: url('{{ site.baseurl }}/img/kids-background.jpg');*/
+    background-color: black;
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
