@@ -4,20 +4,19 @@ permalink: /blog/
 <!DOCTYPE html>
 <html>
     {% include head.html %}
-    {% include navbar.html %}
+    
+        {% include navbar2.html %}
+    
     <section class="blog" style="padding: 100px 0">
         <body>
             <div class="container">
                 <div class="row">
                     {% for post in site.posts %}
                         <div class="col-md-4 col-sm-6">
-                            <a href="{{ site.baseurl }}/#portfolioModal{{ post.modal-id }}" class="portfolio-link">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
+                            <a href="{{ site.baseurl }}{{ post.url }}" class="portfolio-link">
+                                <div class="item">
+                                    <img src="{{ site.baseurl }}/img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
                                 </div>
-                                <img src="{{ site.baseurl }}/img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
                             </a>
                             <div class="portfolio-caption">
                                 <h4>{{ post.title }}</h4>
