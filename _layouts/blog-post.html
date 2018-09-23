@@ -6,16 +6,17 @@
     {% include navbar2.html %}
     {% for post in site.posts %}
         {% if post.link == page.id %}
-            <div class="container" style="margin-bottom: 5em">
+            <div class="container text-center" style="margin-bottom: 5em">
                 <h1>{{ post.title }}</h1>
                 <p style="color: #777; font-size: 1em;">{{ post.date }}</p>
-                <img class="img-responsive" src="/img/portfolio/{{ post.img }}">
+                <img class="img-responsive img-centered" src="/img/portfolio/{{ post.img }}">
                 <h3>{{ post.subtitle }}</h3>
                 <p style="font-size: 1em">{{ post.description }}</p>
             </div>
             {% break %}
         {% endif %}
     {% endfor %}
+    {% include share-bar.html %}
     {% include footer.html %}
     {% include js.html %}
 
