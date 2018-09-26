@@ -9,19 +9,21 @@ description: "Improving the lives of kids in Newark one line of code at a time. 
 people:
 - name: Ben Campbell
   pic: 1
-  position: ben.njcssa@gmail.com, Founder
+  position: ben.njcssa@gmail.com, NJCSSA Founder
   social:
     - title: github
       url: github.com/benjaminnow
 
 - name: Darrin Sharif
   pic: 2
-  position: Newark Kids Code Founder
+  position: Newark Kids Code Founder, Council Member of the Central Ward in Newark, Chief Administrative Officer of the Urban League in Newark
   social:
     - title: twitter
       url: twitter.com/dsharif
     - title: linkedin
       url: linkedin.com/in/darrin-sharif-52539b87/
+    - title: facebook
+      url: facebook.com/darrin.sharif
 
 
 
@@ -35,6 +37,8 @@ social:
     url: https://discordapp.com/channels/491619339087118336/491619339087118340
   - title: instagram
     url: https://www.instagram.com/nj.cs.sa/
+  - title: facebook
+    url: https://www.facebook.com/njcssa/
 
 
 # Postal address (add as many lines as necessary)
