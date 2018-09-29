@@ -41,6 +41,22 @@ social:
     url: https://www.facebook.com/njcssa/
 
 
+# History Modal info here:
+history:
+  - title: Newark Kids Code is founded
+    num: 1
+    imgs: img/about/njcssa200.jpg,img/portfolio/macbook.jpg
+  - title: Newark Kids Code Graduates 3 classes
+    num: 2
+    imgs: img/about/njcssa200.jpg,img/portfolio/macbook.jpg
+  - title: Newark Kids Code buys the Tech House
+    num: 3
+    imgs: img/about/njcssa200.jpg,img/portfolio/macbook.jpg
+  - title: NJCSSA Founded
+    num: 4
+    imgs: img/about/njcssa200.jpg,img/portfolio/macbook.jpg
+
+
 # Postal address (add as many lines as necessary)
 address:
   - line: 508 Central Avenue

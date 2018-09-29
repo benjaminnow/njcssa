@@ -1,0 +1,59 @@
+{% for history in site.history %}
+<div class="portfolio-modal modal fade" id="history{{ history.num }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{ history.title }}</h2>
+                            <hr class="star-primary">
+                            <div id="myCarousel{{ history.num }}" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                  <li data-target="#myCarousel{{ history.num }}" data-slide-to="0" class="active"></li>
+                                  <li data-target="#myCarousel{{ history.num }}" data-slide-to="1"></li>
+                                  <li data-target="#myCarousel{{ history.num }}" data-slide-to="2"></li>
+                                </ol>
+                              
+                                <!-- Wrapper for slides -->
+                                {% assign imgs = history.imgs | split: "," %}
+                                {% assign counter = 0 %}
+                                <div class="carousel-inner">
+                                  {% for img in imgs %}
+                                    {% if counter == 0 %}
+                                        <div class="item active">
+                                            <img src="{{ img }}" alt="Los Angeles">
+                                        </div>
+                                    {% else %}
+                                        <div class="item">
+                                            <img src="{{ img }}" alt="Los Angeles">
+                                        </div>
+                                    {% endif %}
+                                    {% assign counter = counter | plus:1 %}
+                                  {% endfor %}
+                                </div>
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel{{ history.num }}" data-slide="prev">
+                                  <i class="fa fa-angle-left fa-4x"></i>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel{{ history.num }}" data-slide="next">
+                                  <i class="fa fa-angle-right fa-4x"></i>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
