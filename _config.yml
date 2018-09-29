@@ -16,7 +16,7 @@ people:
 
 - name: Darrin Sharif
   pic: 2
-  position: Newark Kids Code Founder, Council Member of the Central Ward in Newark, Chief Administrative Officer of the Urban League in Newark
+  position: Newark Kids Code Director, Former Council Member of the Central Ward in Newark, Chief Administrative Officer of the Urban League in Newark
   social:
     - title: twitter
       url: twitter.com/dsharif
@@ -45,16 +45,16 @@ social:
 history:
   - title: Newark Kids Code is founded
     num: 1
-    imgs: img/about/njcssa200.jpg,img/portfolio/macbook.jpg
+    imgs: img/about/founding/founding2.jpg,img/about/founding/founding3.jpg,img/about/founding/founding4.jpg,img/about/founding/founding5.jpg,img/about/founding/founding6.jpg,img/about/founding/founding7.jpg,img/about/founding/founding8.jpg
   - title: Newark Kids Code Graduates 3 classes
     num: 2
-    imgs: img/about/njcssa200.jpg,img/portfolio/macbook.jpg
+    imgs: img/about/graduations/graduation1.jpg,img/about/graduations/graduation2.jpg,img/about/graduations/graduation3.jpg,img/about/graduations/graduation4.jpg,img/about/graduations/graduation5.jpg
   - title: Newark Kids Code buys the Tech House
     num: 3
-    imgs: img/about/njcssa200.jpg,img/portfolio/macbook.jpg
+    imgs: img/about/tech-house/tech-house1.jpg,img/about/tech-house/tech-house2.jpg,img/about/tech-house/tech-house3.jpg,img/about/tech-house/tech-house4.jpg,img/about/tech-house/tech-house5.jpg,
   - title: NJCSSA Founded
     num: 4
-    imgs: img/about/njcssa200.jpg,img/portfolio/macbook.jpg
+    imgs: img/about/njcssa_logo.png
 
 
 # Postal address (add as many lines as necessary)

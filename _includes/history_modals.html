@@ -14,15 +14,16 @@
                             <h2>{{ history.title }}</h2>
                             <hr class="star-primary">
                             <div id="myCarousel{{ history.num }}" class="carousel slide" data-ride="carousel">
+                                {% assign imgs = history.imgs | split: "," %}
+                                {% assign num = imgs | size | minus: 1 %}
                                 <!-- Indicators -->
                                 <ol class="carousel-indicators">
-                                  <li data-target="#myCarousel{{ history.num }}" data-slide-to="0" class="active"></li>
-                                  <li data-target="#myCarousel{{ history.num }}" data-slide-to="1"></li>
-                                  <li data-target="#myCarousel{{ history.num }}" data-slide-to="2"></li>
+                                  {% for i in (0..num) %}
+                                    <li data-target="#myCarousel{{ history.num }}" data-slide-to="{{ i }}" class="active"></li>
+                                  {% endfor %}
                                 </ol>
                               
                                 <!-- Wrapper for slides -->
-                                {% assign imgs = history.imgs | split: "," %}
                                 {% assign counter = 0 %}
                                 <div class="carousel-inner">
                                   {% for img in imgs %}
