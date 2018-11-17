@@ -85,18 +85,35 @@
                 delta = 500;
             }
 
-            setTimeout(function() {
-            that.tick();
-            }, delta);
+            if (!out_of_view) {
+                setTimeout(function() {
+                that.tick();
+                }, delta);
+            }
         };
-
+        // some spaghetti code right here lol
+        var out_of_view = false;
+        var text_type = null;
+        var already_ticked = false;
         window.onload = function() {
             var elements = document.getElementsByClassName('typewrite');
             for (var i=0; i<elements.length; i++) {
+                window.onscroll = function() {
+                    if (window.pageYOffset > document.getElementById('animated-text').offsetHeight) {
+                        out_of_view = true;
+                        already_ticked = false;
+                    } else {
+                        out_of_view = false;
+                        if (text_type != null && !already_ticked) {
+                            text_type.tick();
+                            already_ticked = true;
+                        }
+                    }
+                };
                 var toRotate = elements[i].getAttribute('data-type');
                 var period = elements[i].getAttribute('data-period');
                 if (toRotate) {
-                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                    text_type = new TxtType(elements[i], JSON.parse(toRotate), period);
                 }
             }
             // INJECT CSS
@@ -105,10 +122,11 @@
             css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
             document.body.appendChild(css);
         };
+        
     </script>
 
     <header>
-        <div class="container">
+        <div class="container" id="animated-text">
             <div class="intro-text">
                 <h1 style="margin-bottom: 5em">
                     <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to NJCSSA!", "The New Jersey Computer Science Student Alliance", "We teach.", "We help others.", "We need your help!", "Look below for more info!" ]'>
