@@ -58,6 +58,11 @@
             this.tick();
             this.isDeleting = false;
         };
+        
+        var out_of_view = false;
+        var text_type = null;
+        var already_ticked = false;
+        var first_scroll = true;
 
         TxtType.prototype.tick = function() {
             var i = this.loopNum % this.toRotate.length;
@@ -93,26 +98,9 @@
         };
         // some spaghetti code right here lol
         // don't ask me to explain this 6 months from now
-        var out_of_view = false;
-        var text_type = null;
-        var already_ticked = false;
-        var first_scroll = true;
         window.onload = function() {
             var elements = document.getElementsByClassName('typewrite');
             for (var i=0; i<elements.length; i++) {
-                window.onscroll = function() {
-                    if (window.pageYOffset > document.getElementById('animated-text').offsetHeight) {
-                        out_of_view = true;
-                        already_ticked = false;
-                        first_scroll = false;
-                    } else {
-                        out_of_view = false;
-                        if (text_type != null && !already_ticked && !first_scroll) {
-                            text_type.tick();
-                            already_ticked = true;
-                        }
-                    }
-                };
                 var toRotate = elements[i].getAttribute('data-type');
                 var period = elements[i].getAttribute('data-period');
                 if (toRotate) {
@@ -124,6 +112,19 @@
             css.type = "text/css";
             css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
             document.body.appendChild(css);
+        };
+        window.onscroll = function() {
+                    if (window.pageYOffset > document.getElementById('animated-text').offsetHeight) {
+                        out_of_view = true;
+                        already_ticked = false;
+                        first_scroll = false;
+                    } else {
+                        out_of_view = false;
+                        if (text_type != null && !already_ticked && !first_scroll) {
+                            text_type.tick();
+                            already_ticked = true;
+                        }
+                    }
         };
         
     </script>
