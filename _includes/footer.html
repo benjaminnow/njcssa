@@ -102,7 +102,21 @@
                             }
                         }
             };
-            
-            
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // click to load images in timeline code
+        // https://stackoverflow.com/questions/38611291/javascript-load-images-in-a-div-after-clicking-a-button
+        
+        var clicked = [0, 0, 0, 0]; // really hacky way of doing it
+        function show(num_modal) {
+            if (clicked[num_modal-1] == 0) {
+                var images = document.querySelectorAll("#myCarousel" + num_modal + " .item img");
+                for(var i = 0; i < images.length; i++)
+                {
+                    images[i].src = images[i].getAttribute('data-src');
+                }
+                clicked[num_modal-1] = 1;
+            }
+        }    
         </script>
     </footer>
