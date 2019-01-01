@@ -1,7 +1,7 @@
 
 # Site settings
 title: NJCSSA
-email: ben.njcssa@gmail.com
+email: ben@njcssa.org
 description: "Improving the lives of kids in Newark one line of code at a time. Volunteer with NJCSSA today to become a programming instructor!"
 
 
@@ -9,7 +9,7 @@ description: "Improving the lives of kids in Newark one line of code at a time. 
 people:
 - name: Ben Campbell
   pic: 1
-  position: ben.njcssa@gmail.com, NJCSSA Founder
+  position: ben@njcssa.org, NJCSSA Founder
   social:
     - title: github
       url: github.com/benjaminnow
@@ -24,6 +24,10 @@ people:
       url: linkedin.com/in/darrin-sharif-52539b87/
     - title: facebook
       url: facebook.com/darrin.sharif
+
+- name: Risha Surana
+  pic: 3
+  position: NJCSSA instructor
 
 
 
