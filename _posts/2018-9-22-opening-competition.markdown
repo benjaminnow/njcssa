@@ -14,6 +14,7 @@ category-link: competitions
 permalink: /:year/:month/:day/:title.html
 description: To celebrate the opening of NJCSSA and its partnership with Newark Kids Code, we are holding a programming competition for students to compete to win a 2008 Macbook Pro. Go to this  <a href="/2018/09/22/opening-competition">link</a> to get more info.
 link: /2018/09/22/opening-competition
+published: false
 ---
 
 # Inaugural Programming Competition
