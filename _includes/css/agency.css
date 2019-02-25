@@ -69,11 +69,15 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
 p.large {
+    font-size: 16px;
+}
+
+ul {
     font-size: 16px;
 }
 

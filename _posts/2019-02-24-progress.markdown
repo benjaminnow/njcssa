@@ -1,0 +1,51 @@
+---
+title: NJCSSA Update
+subtitle: Progress!
+modal-id: 4
+layout: post-freeform
+date: 2019-02-24
+img: /img/portfolio/progress-thumbnail.png
+thumbnail: progress-thumbnail.png
+alt: image-alt
+project-date: February 2019
+client: none
+category: event
+category-link: event
+description:
+permalink: /:year/:month/:day/:title.html
+link: /2019/02/24/progress
+---
+
+
+
+We launched the NJCSSA's inaugural coding class in January 2019, and our first class of students and volunteer instructors is making strong progress towards fulfilling the goals of the NJCSSA's coding program―learning technical coding skills and, more importantly, learning how to independently develop those skills after completing the course. Here is a brief summary of the teaching methods employed and some initial metrics on the NJCSSA's progress for the consideration of those who may be interested in lending their support.
+<br>
+<br>
+### Instructional Framework
+
+The curriculum is based on Python programming fundamentals and basic game programming. Classes are held at the Urban League of Essex County on Monday and Tuesday after school and on Saturday, for a term of 10 weeks(The original 10 week schedule will be slightly extended due to snow days). There are 4 classes per week that consist of lectures, tutorials and labs. Each lecture is presented by a student volunteer and is supplemented through one-on-one instruction during the class. Labs are used for the purpose of having the students apply what they learned in the lecture. Labs are also supplemented by one-on-one instruction. There appears to be a real affinity between students and instructors of the same age that promotes learning. 
+<br>
+<br>
+
+### Student Volunteers
+
+
+We had our kickoff meeting for volunteers on December 16, 2018, at the Summit (NJ) Public Library. At that meeting, I discussed my background, the curriculum, expectations for instructors, and the overall objectives of the program. We use Discord, an instant messaging platform most similar to Slack. Instructors can communicate with each other on Discord concerning program adjustments, such as adding new practice problems for consideration. Students use Discord to ask questions outside of class and get near instant help from instructors.
+
+Our high school volunteers are skilled at many different programming languages and have a passion for the subject matter and a desire to teach others. NJCSSA has 13 members from schools including Summit High School, Morristown High School, Chatham High School, The Pingry School, Whippany-Park High School, and Home School. The instructors rotate teaching schedules during the 4 classes/labs each week.
+<br>
+<br>
+
+### Students
+
+
+We currently have 7 students enrolled in the program. They are all motivated high school students in 11th and 12th grades from the following Newark public high schools:Technology High School, Donald Payne High School, Barringer High School, University High School, and Central High School. None of them has had formal instruction in computer programming prior to this course, but some of them are currently involved in robotics.
+<br>
+<br>
+
+### What Have We Covered?
+
+
+We are now in our third week of class. We have covered Python basics including variables, if statements, while loops, and for loops. Next week, we are going to dive into graphical programming using the Turtle library Python comes with.
+
+Email me if you have any questions: ben@njcssa.org
