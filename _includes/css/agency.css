@@ -4,7 +4,30 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+.about-us-item img {
+    webkit-filter: blur(2px);
+    filter: blur(2px);
+}
 
+.about-us-item:hover > img {
+    webkit-filter: blur(0px);
+    filter: blur(0px);
+    transition-duration: 300ms;
+}
+
+
+.about-us-item p {
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-about:hover {
+    color: white;
+}
 
 .map-responsive{
     overflow:hidden;
