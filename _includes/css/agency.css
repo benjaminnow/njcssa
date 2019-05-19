@@ -5,16 +5,15 @@
  */
 
 .about-us-item img {
-    webkit-filter: blur(2px);
-    filter: blur(2px);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .about-us-item:hover > img {
-    webkit-filter: blur(0px);
-    filter: blur(0px);
-    transition-duration: 300ms;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition-duration: 400ms;
 }
-
 
 .about-us-item p {
     color: white;
@@ -23,6 +22,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.about-us-item:nth-child(n):nth-child(-n+2) {
+    margin-bottom: 15px;
+}
+
+.about-us-item:nth-child(n+1):nth-child(-n+4) {
+    margin-top: 15px;
 }
 
 .overlay-about:hover {
