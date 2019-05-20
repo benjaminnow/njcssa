@@ -6,8 +6,32 @@
                     <h2 class="section-heading">Our Amazing Team</h2>
                 </div>
             </div>
+            <!-- Sort people by last name code-->
+            {% assign names_array = site.people | map: "name" %}
+            {% assign holder_string = "" %}
+            {% assign last_name_string = "" %}
+            {% assign people_array_size = names_array.size | minus: 1 %}
+            {% for num in (0...people_array_size) %}
+                {% assign current_name = names_array[num] | append: " " | append: num | split: " " %}
+                {% assign holder_string = holder_string | append: current_name %}
+                {% assign last_name_string = last_name_string | append: current_name[1] | append: "," | append: current_name[2] | append: " " %}
+            {% endfor %}
+            {% assign last_name_array = last_name_string | split: " " %}
+            {% assign sorted_last_names_array = last_name_array | sort %}
+            {% assign last_name_order_string = "" %}
+            {% for str in sorted_last_names_array %}
+                {% assign name_array = str | split: "," %}
+                {% assign last_name_order_string = last_name_order_string | append: name_array[1] | append: "," %}
+            {% endfor %}
+            <!--Final sorted index result-->
+            {% assign final_order_array = last_name_order_string | split: "," | compact %}
+            
+
+
+            <!--Create rows of 3 people code-->
             {% assign loop_times = site.people.size | divided_by: 3.0 | ceil %}
             {% assign counter = 0 %}
+            {% assign last_name_counter = 0 %}
             {% for i in (1..loop_times) %}
                 {% assign end = counter | plus:1 | times:3 | minus:1 %}
                 {% if end >= site.people.size %}
@@ -16,8 +40,9 @@
                 {% assign start = counter | times: 3 %}
                 <div class="row">
                     {% for p in (start...end) %}
-                        {% assign member = site.people[p] %}
-                        <div class="col-sm-4">
+                        <!--times used as hack to convert index_number var into int from string-->
+                        {% assign index_number = final_order_array[last_name_counter] | times: 1 %}
+                        {% assign member = site.people[index_number] %}                        <div class="col-sm-4">
                             <div class="team-member">
                                 <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
                                 <h4>{{ member.name }}</h4>
@@ -33,6 +58,7 @@
                                 </ul>
                             </div>
                         </div>
+                        {% assign last_name_counter = last_name_counter | plus:1 %}
                     {% endfor %}
                 </div>
                 {% assign counter = counter | plus:1 %}
