@@ -28,13 +28,6 @@ if (w > 800) {
     formWidth = w / 2 - 200;
 }
 
-var makeFormIframe = document.createElement("iframe");
-makeFormIframe.setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLSfiWNuf6bWDjeKHd9arR3Iqt9Gp0OQEXIxABasWByMfu1iEEQ/viewform?embedded=true");
-makeFormIframe.setAttribute("height", "500");
-makeFormIframe.setAttribute("width", String(formWidth));
-makeFormIframe.setAttribute("frameborder", "0");
-makeFormIframe.setAttribute("marginheight", "0");
-makeFormIframe.setAttribute("marginwidth", "0");
 var makeDiscordIframe = document.createElement("iframe");
 makeDiscordIframe.setAttribute("src", "https://discordapp.com/widget?id=491619339087118336&theme=dark");
 makeDiscordIframe.setAttribute("height", "500");
@@ -42,12 +35,16 @@ makeDiscordIframe.setAttribute("width", "300");
 makeDiscordIframe.setAttribute("frameborder", "0");
 makeDiscordIframe.setAttribute("allowtransparency", "true");
 
+var makeFormIframe = document.createElement("iframe");
+makeFormIframe.setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLSfiWNuf6bWDjeKHd9arR3Iqt9Gp0OQEXIxABasWByMfu1iEEQ/viewform?embedded=true");
+makeFormIframe.setAttribute("height", "500");
+makeFormIframe.setAttribute("width", String(formWidth));
+makeFormIframe.setAttribute("frameborder", "0");
+makeFormIframe.setAttribute("marginheight", "0");
+makeFormIframe.setAttribute("marginwidth", "0");
+
 var e = document.getElementsByClassName("widget");
 e.item(0).appendChild(makeDiscordIframe);
 e.item(1).appendChild(makeFormIframe);
-
-
-
-
 
 </script>
