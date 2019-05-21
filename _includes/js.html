@@ -11,7 +11,106 @@
 
     <!-- Contact Form JavaScript -->
     <script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/contact_me.js" | prepend: site.baseurl }}"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
+
+    <script>
+         //big thanks to this guy for this code :) https://codepen.io/hi-im-si/
+         var TxtType = function(el, toRotate, period) {
+             this.toRotate = toRotate;
+             this.el = el;
+             this.loopNum = 0;
+             this.period = parseInt(period, 10) || 2000;
+             this.txt = '';
+             this.tick();
+             this.isDeleting = false;
+         };
+         
+         var out_of_view = false;
+         var text_type = null;
+         var already_ticked = false;
+         var first_scroll = true;
+         
+ 
+         TxtType.prototype.tick = function() {
+             var i = this.loopNum % this.toRotate.length;
+             var fullTxt = this.toRotate[i];
+ 
+             if (this.isDeleting) {
+                 this.txt = fullTxt.substring(0, this.txt.length - 1);
+             } else {
+                 this.txt = fullTxt.substring(0, this.txt.length + 1);
+             }
+ 
+             this.el.innerHTML = '<span class="wrap" style="color: #4ae033; font-size: 2.5em">'+this.txt+'</span>';
+ 
+             var that = this;
+             var delta = 150 - Math.random() * 100;
+ 
+             if (this.isDeleting) { delta /= 2; }
+ 
+             if (!this.isDeleting && this.txt === fullTxt) {
+                 delta = this.period;
+                 this.isDeleting = true;
+             } else if (this.isDeleting && this.txt === '') {
+                 this.isDeleting = false;
+                 this.loopNum++;
+                 delta = 500;
+             }
+ 
+             if (!out_of_view) {
+                 setTimeout(function() {
+                 that.tick();
+                 }, delta);
+             }
+         };
+         
+         setTimeout(function() {
+             var elements = document.getElementsByClassName('typewrite');
+             for (var i=0; i<elements.length; i++) {
+                 var toRotate = elements[i].getAttribute('data-type');
+                 var period = elements[i].getAttribute('data-period');
+                 if (toRotate) {
+                     text_type = new TxtType(elements[i], JSON.parse(toRotate), period);
+                 }
+             }
+             // INJECT CSS for cursor line
+             var css = document.createElement("style");
+             css.type = "text/css";
+             css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+             document.body.appendChild(css);
+         }, 2000);
+         // some spaghetti code right here lol
+         // don't ask me to explain this 6 months from now
+         
+         window.onscroll = function() {
+                     if (window.pageYOffset > document.getElementById('animated-text').offsetHeight) {
+                         out_of_view = true;
+                         already_ticked = false;
+                         first_scroll = false;
+                     } else {
+                         out_of_view = false;
+                         if (text_type != null && !already_ticked && !first_scroll) {
+                             text_type.tick();
+                             already_ticked = true;
+                         }
+                     }
+         };
+
+     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     // click to load images in timeline code
+     // https://stackoverflow.com/questions/38611291/javascript-load-images-in-a-div-after-clicking-a-button
+     
+     var clicked = [0, 0, 0, 0]; // really hacky way of doing it
+     function show(num_modal) {
+         if (clicked[num_modal-1] == 0) {
+             var images = document.querySelectorAll("#myCarousel" + num_modal + " .item img");
+             for(var i = 0; i < images.length; i++)
+             {
+                 images[i].src = images[i].getAttribute('data-src');
+             }
+             clicked[num_modal-1] = 1;
+         }
+     }    
+     </script>

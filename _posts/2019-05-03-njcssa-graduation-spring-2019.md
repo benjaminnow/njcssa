@@ -4,8 +4,8 @@ subtitle: Spring 2019
 modal-id: 4
 layout: post-freeform
 date: 2019-05-03
-img: /img/portfolio/progress-thumbnail.png
-thumbnail: progress-thumbnail.png
+img: graduation1.jpg
+thumbnail: graduation-thumbnail.jpg
 alt: image-alt
 project-date: May 2019
 client: none

@@ -4,7 +4,7 @@ subtitle: Progress!
 modal-id: 4
 layout: post-freeform
 date: 2019-02-24
-img: /img/portfolio/progress-thumbnail.png
+img: progress-thumbnail.png
 thumbnail: progress-thumbnail.png
 alt: image-alt
 project-date: February 2019
