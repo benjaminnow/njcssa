@@ -38,6 +38,35 @@ people:
   position: NJCSSA instructor
 
 
+board:
+- name: Emily Campbell
+  pic: 0
+  board: true
+  position: Director
+
+- name: Mike Campbell
+  pic: 0
+  board: true
+  position: Director
+
+- name: Mark Pohl
+  pic: 0
+  board: true
+  position: Director
+
+- name: Lisa Rampersad
+  pic: 0
+  board: true
+  position: Director
+
+- name: Steve Peterson
+  pic: 0
+  board: true
+  position: Director
+
+
+
+
 
 
 
