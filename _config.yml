@@ -8,14 +8,14 @@ description: "Improving the lives of kids in Newark one line of code at a time. 
 # Team names, titles and social links
 people:
 - name: Ben Campbell
-  pic: 1
+  pic: bencampbell
   position: ben@njcssa.org, NJCSSA Founder
   social:
     - title: github
       url: github.com/benjaminnow
 
 - name: Darrin Sharif
-  pic: 2
+  pic: darrinsharif
   position: Advisor to the NJCSSA, Newark Kids Code Director, Former Council Member of the Central Ward in Newark, Chief Administrative Officer of the Urban League in Newark
   social:
     - title: twitter
@@ -26,11 +26,11 @@ people:
       url: facebook.com/darrin.sharif
 
 - name: Risha Surana
-  pic: 3
+  pic: rishasurana
   position: NJCSSA instructor
 
 - name: Robert Zhao
-  pic: 4
+  pic: robertzhao
   position: NJCSSA instructor, Java and Python programmer, Discord:lucasbright8491#8274
 
 - name: Ronak Thakker
@@ -40,28 +40,23 @@ people:
 
 board:
 - name: Emily Campbell
-  pic: 0
-  board: true
+  pic: emilycampbell
   position: Director
 
 - name: Mike Campbell
   pic: 0
-  board: true
   position: Director
 
 - name: Mark Pohl
   pic: 0
-  board: true
   position: Director
 
 - name: Lisa Rampersad
   pic: 0
-  board: true
   position: Director
 
 - name: Steve Peterson
   pic: 0
-  board: true
   position: Director
 
 
