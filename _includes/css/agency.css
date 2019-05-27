@@ -4,14 +4,13 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-
  
- .footer-about-us {
+.footer-about-us {
      margin-top: 20em;
      background-color: #222;
  }
 
- .footer-about-us span {
+.footer-about-us span {
      color: #{{ site.data.template.color.primary }};
  }
 

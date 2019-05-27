@@ -6,7 +6,9 @@
         <div class="col-md-8 col-md-offset-2">
             <h1>{{ page.title }}<h1>
             <p class="text-muted" style="font-size: 14px">{{ page.date }}</p>
-            <img src="/img/portfolio/{{ page.img }}" class="img-responsive img-centered" style="margin-bottom: 2em; margin-top: 1em">
+            {% if page.img %}
+                <img src="/img/portfolio/{{ page.img }}" class="img-responsive img-centered" style="margin-bottom: 2em; margin-top: 1em">
+            {% endif %}
             <div style="font-family: 'Merriweather', serif; text-transform: none; font-weight: 500;">
                 {{ content }}
             </div> 
