@@ -6,7 +6,7 @@
     {% include navbar.html %}
     {% for post in site.posts %}
         {% if post.link == page.id %}
-            <div class="container text-center" style="margin-bottom: 5em">
+            <div class="container text-center" style="margin-bottom: 6em; margin-top: 6em">
                 <h1>{{ post.title }}</h1>
                 <p style="color: #777; font-size: 1em;">{{ post.date }}</p>
                 <img class="img-responsive img-centered" src="/img/portfolio/{{ post.img }}">
