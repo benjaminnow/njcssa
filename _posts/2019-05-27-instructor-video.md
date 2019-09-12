@@ -1,5 +1,5 @@
 ---
-title: Instructor Recruitment Video
+title: Instructor Promo Video
 subtitle: Come Join Us!
 modal-id: 6
 layout: post-freeform
