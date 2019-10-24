@@ -27,7 +27,7 @@ After the Spring 2019 program, I thought it would be easy and quick to host a su
 I started making calls to anyone who could help me, including dozens of churches, Rutgers, and the Newark Public Library. I brainstormed ideas on how to get food. I contacted family friends for laptop donations and bought some used laptops just in case. Many of the calls weren’t successful, but eventually some places called back saying they were willing to help. 
 
 
-I was overjoyed when Link Charter School replied. I worked with Link last summer when I was hosting the first Python course. I really liked their computer lab, and they were so accommodating to me as a first time teacher. I had a great experience with their students who were mature beyond their years and great learners. They came through with the full package for me: modern computer lab, projector, chalkboard, free breakfast, and free lunch for all students. Link was a wonderful partner to host the second summer program, and I am so grateful for their support.
+I was overjoyed when Link Charter School replied. I worked with Link last summer when I was hosting the first Python course. I really liked their computer lab, and they were so accommodating to me as a first time teacher. I had a great experience with their students who were mature beyond their years and great learners. They came through with the full package for NJCSSA: modern computer lab, projector, chalkboard, free breakfast, and free lunch for all students. Link was a wonderful partner to host the second summer program, and I am so grateful for their support.
 
 <h2 style="margin: 1em 0 1em 0">Topics</h2>
 
@@ -56,7 +56,7 @@ Problems I encountered and how I addressed them:
 
 <h2 style="margin: 1em 0 1em 0">Guest Speakers</h2>
 
-<img src="/img/portfolio/njit.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: 2em; margin-bottom: 2em; width: 60%; height: auto">
+<img src="/img/portfolio/njit_presentation.jpg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 2em; margin-bottom: 2em">
 
 Our first guest speaker was Marisa Sigas. She is a Computer Science major at NJIT, and she interned as a software engineer at United Healthcare this summer. I met her through a party hosted by Newark Kids Code, where she volunteered as a CS teacher. She spoke via video conference to our class about what it’s like to study CS in college, what her job is like, and how she got interested in CS. It was helpful for students to realize that they have a world-class research university in their backyard where they can get a great CS education.
 
