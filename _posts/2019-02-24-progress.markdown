@@ -21,6 +21,7 @@ link: /2019/02/24/progress
 We launched the NJCSSA's inaugural coding class in January 2019, and our first class of students and volunteer instructors is making strong progress towards fulfilling the goals of the NJCSSA's coding program―learning technical coding skills and, more importantly, learning how to independently develop those skills after completing the course. Here is a brief summary of the teaching methods employed and some initial metrics on the NJCSSA's progress for the consideration of those who may be interested in lending their support.
 <br>
 <br>
+
 ### Instructional Framework
 
 The curriculum is based on Python programming fundamentals and basic game programming. Classes are held at the Urban League of Essex County on Monday and Tuesday after school and on Saturday, for a term of 10 weeks(The original 10 week schedule will be slightly extended due to snow days). There are 4 classes per week that consist of lectures, tutorials and labs. Each lecture is presented by a student volunteer and is supplemented through one-on-one instruction during the class. Labs are used for the purpose of having the students apply what they learned in the lecture. Labs are also supplemented by one-on-one instruction. There appears to be a real affinity between students and instructors of the same age that promotes learning. 
