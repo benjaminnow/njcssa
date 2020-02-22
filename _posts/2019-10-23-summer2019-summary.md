@@ -56,7 +56,7 @@ Problems I encountered and how I addressed them:
 
 <h2 style="margin: 1em 0 1em 0">Guest Speakers</h2>
 
-<img src="/img/portfolio/njit_presentation.jpg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 2em; margin-bottom: 2em">
+<img src="/img/portfolio/njit_presentation.jpg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 2em; margin-bottom: 2em; width: 50%; height: auto">
 
 Our first guest speaker was Marisa Sigas. She is a Computer Science major at NJIT, and she interned as a software engineer at United Healthcare this summer. I met her through a party hosted by Newark Kids Code, where she volunteered as a CS teacher. She spoke via video conference to our class about what it’s like to study CS in college, what her job is like, and how she got interested in CS. It was helpful for students to realize that they have a world-class research university in their backyard where they can get a great CS education.
 

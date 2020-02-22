@@ -1,0 +1,26 @@
+h2 {
+    margin: 1em 0 1em 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+ol {
+    font-size: 1.15em;
+}
+
+li {
+    font-size: 1.15em;
+}
+
+p {
+    font-size: 1.25em;
+    margin: 1em 0 1em 0;
+}
+
+a {
+    word-wrap: break-word;
+}
