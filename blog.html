@@ -1,6 +1,7 @@
 ---
 permalink: /blog/
 ---
+
 <!DOCTYPE html>
 <html>
     {% include head.html %}
@@ -9,7 +10,7 @@ permalink: /blog/
     <section class="blog" style="padding: 100px 0">
         <body>
             <div class="container">
-                <div class="row">
+                <div class="row" style="display: flex; flex-wrap: wrap;">
                     {% for post in site.posts %}
                         <div class="col-md-4 col-sm-6">
                             <a href="{{ site.baseurl }}{{ post.url }}" class="portfolio-link">
