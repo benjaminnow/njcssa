@@ -604,8 +604,9 @@ section h3.section-subheading {
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
+    #portfolio .equal {
+        display: flex; 
+        flex-wrap: wrap;
     }
 }
 

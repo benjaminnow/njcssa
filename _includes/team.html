@@ -43,7 +43,8 @@
                     {% for p in (start...end) %}
                         <!--times used as hack to convert index_number var into int from string-->
                         {% assign index_number = final_order_array[last_name_counter] | times: 1 %}
-                        {% assign member = site.people[index_number] %}                        <div class="col-sm-4">
+                        {% assign member = site.people[index_number] %}
+                        <div class="col-sm-4">
                             <div class="team-member">
                                 <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
                                 <h4>{{ member.name }}</h4>
