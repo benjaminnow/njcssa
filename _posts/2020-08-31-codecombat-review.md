@@ -79,6 +79,12 @@ I would suggest CodeCombat for introductory classes and maybe AP CS Principles. 
 - 4 instructors
 - 9 Students
 
+## CodeCombat's New Game
+
+![](/img/portfolio/codecombat_review8-31-20/ozaria.jpg)
+
+Check out [Ozaria](https://www.ozaria.com/) also if you have the time.
+
 
 
 
